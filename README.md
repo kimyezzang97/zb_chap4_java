@@ -29,3 +29,26 @@ JDBC 순서
 5. 결과 처리
 6. JDBC 연결 해제
 
+---
+예시 sql table
+
+```
+create table member
+(
+member_type varchar(50)  not null comment 'type',
+user_id     varchar(100) not null comment '사용자 ID',
+password    varchar(100) not null comment '비밀번호',
+name        varchar(100) not null comment '이름'
+)
+comment '유저 정보';
+```
+
+```mariadb
+insert into member (member_type, user_id, password, name)
+values  ('email', 'kwon@gmail.com', '7777', '원균'),
+        ('email', 'kwon@daum.net', '1592', '이순신'),
+        ('email', 'test@naver.com', '1234', '박규태'),
+        ('kakao', 'syryu@nate.com', '', '류성용'),
+        ('kakao', 'test@naver.com', '', '박규태'),
+        ('email', 'kyc@naver.com', '9999', '김예짱');
+```
