@@ -5,6 +5,8 @@
 #### 개발환경
 
 - Java8
+- MAC
+- IntelliJ IDEA
 - MariaDB jdbc Driver : 3.3.2-GA 
 
   - 구글에 mariadb jdbc driver 검색 > 다운로드
